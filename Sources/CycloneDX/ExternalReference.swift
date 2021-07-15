@@ -40,7 +40,7 @@ public struct ExternalReference: Hashable {
 
 extension ExternalReference: Encodable {
     private enum CodingKeys: String, CodingKey {
-        case kind
+        case kind = "type"
         case url
         case comment
         case hashes
