@@ -50,630 +50,631 @@ OPTIONS:
 
 ```json
 {
-  "format" : "CycloneDX",
-  "serialNumber" : "urn:uuid:57F2F513-63CC-40C8-9828-EB51E1B883AD",
-  "specVersion" : "1.2",
-  "metadata" : {
-    "timestamp" : "2021-07-15T21:50:00Z"
-  },
-  "components": [
-    {
-      "id" : "swift-package-sbom",
-      "classification" : "application",
-      "pedigree" : {
-        "commits" : [
-          {
-            "id" : "e5f8119e8aff6d62c631663968b56c774012a441",
-            "author" : {
-              "name" : "Mattt",
-              "email" : "mattt@me.com"
-            },
-            "committer" : {
-              "name" : "Mattt",
-              "email" : "mattt@me.com"
-            },
-            "message" : "Initial commit"
-          }
-        ]
-      },
-      "components" : [
-        {
-          "id" : "Sources/swift-package-sbom/main.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/swift-package-sbom/Subcommands/Generate.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/swift-package-sbom/Extensions/AbsolutePath+Extensions.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/swift-package-sbom/Extensions/DataProtocol+Extensions.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/swift-package-sbom/Extensions/Hash.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/swift-package-sbom/Extensions/HashFunction+Extensions.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        }
-      ]
+    "format": "CycloneDX",
+    "serialNumber": "urn:uuid:73BB569B-52BA-4CA7-B2D1-C76CD5661C3C",
+    "specVersion": "1.2",
+    "metadata": {
+        "timestamp": "2021-07-15T22:23:33Z"
     },
-    {
-      "id" : "CycloneDX",
-      "classification" : "library",
-      "pedigree" : {
-        "commits" : [
-          {
-            "id" : "c41e154875eccf1d99f188b80c1fdbb483359eab",
-            "author" : {
-              "name" : "Mattt",
-              "email" : "mattt@me.com"
-            },
-            "committer" : {
-              "name" : "Mattt",
-              "email" : "mattt@me.com"
-            },
-            "message" : "Initial commit"
-          }
-        ]
-      },
-      "components" : [
+    "components": [
         {
-          "id" : "Sources/CycloneDX/Extensions/KeyedEncodingContainerProtocol+Extensions.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
+            "classification": "library",
+            "bom-ref": "CycloneDX",
+            "pedigree": {
+                "commits": [
+                    {
+                        "author": {
+                            "name": "Mattt",
+                            "email": "mattt@me.com"
+                        },
+                        "committer": {
+                            "name": "Mattt",
+                            "email": "mattt@me.com"
+                        },
+                        "uid": "268e2e22efe45bae5f8521725827ff913f9d89de",
+                        "message": "Create Algorithm enumeration with correct encoded values"
+                    }
+                ]
             },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "components": [
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Pedigree.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/ExternalReference.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Service.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/BillOfMaterials.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/IdentifiableAction.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Extensions/KeyedEncodingContainerProtocol+Extensions.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Commit.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Dependency.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/OrganizationalEntity.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Metadata.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/CPE.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Component.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Properties.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Issue.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Patch.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Diff.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Tool.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Composition.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Hash.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/License.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/OrganizationalContact.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/CycloneDX/Supporting Types/Copyright.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/Dependency.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
+            "classification": "application",
+            "bom-ref": "swift-package-sbom",
+            "pedigree": {
+                "commits": [
+                    {
+                        "author": {
+                            "name": "Mattt",
+                            "email": "mattt@me.com"
+                        },
+                        "committer": {
+                            "name": "Mattt",
+                            "email": "mattt@me.com"
+                        },
+                        "uid": "268e2e22efe45bae5f8521725827ff913f9d89de",
+                        "message": "Create Algorithm enumeration with correct encoded values"
+                    }
+                ]
             },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "components": [
+                {
+                    "bom-ref": "Sources/swift-package-sbom/Extensions/Hash.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/swift-package-sbom/Extensions/HashFunction+Extensions.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/swift-package-sbom/Extensions/DataProtocol+Extensions.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/swift-package-sbom/Subcommands/Generate.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/swift-package-sbom/Extensions/AbsolutePath+Extensions.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                },
+                {
+                    "bom-ref": "Sources/swift-package-sbom/main.swift",
+                    "classification": "file",
+                    "hashes": [
+                        {
+                            "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "algorithm": "SHA-256"
+                        },
+                        {
+                            "value": "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
+                            "algorithm": "SHA-384"
+                        },
+                        {
+                            "value": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+                            "algorithm": "SHA-512"
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/Metadata.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "bom-ref": "swift-driver",
+            "classification": "library",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/apple/swift-driver.git"
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/Properties.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "bom-ref": "Git",
+            "classification": "library",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/SwiftDocOrg/Git.git"
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/Supporting Types/Diff.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "bom-ref": "Yams",
+            "classification": "library",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/jpsim/Yams.git"
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/Service.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "bom-ref": "swift-tools-support-core",
+            "classification": "library",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/apple/swift-tools-support-core.git"
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/Supporting Types/Patch.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "bom-ref": "swift-argument-parser",
+            "classification": "library",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/apple/swift-argument-parser.git"
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/Supporting Types/Commit.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "bom-ref": "swift-llbuild",
+            "classification": "library",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/apple/swift-llbuild.git"
+                }
+            ]
         },
         {
-          "id" : "Sources/CycloneDX/BillOfMaterials.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/CPE.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/OrganizationalEntity.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/IdentifiableAction.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/OrganizationalContact.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/Copyright.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/Pedigree.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/Issue.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/ExternalReference.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/Hash.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Component.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/License.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Supporting Types/Tool.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
-        },
-        {
-          "id" : "Sources/CycloneDX/Composition.swift",
-          "classification" : "file",
-          "hashes" : [
-            {
-              "value" : "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "algorithm" : "sha256"
-            },
-            {
-              "value" : "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b",
-              "algorithm" : "sha384"
-            },
-            {
-              "value" : "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-              "algorithm" : "sha512"
-            }
-          ]
+            "bom-ref": "swift-package-manager",
+            "classification": "library",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/apple/swift-package-manager.git"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "id" : "swift-package-manager",
-      "classification" : "library",
-      "externalReferences" : [
-        {
-          "kind" : "vcs",
-          "url" : "https://github.com/apple/swift-package-manager.git"
-        }
-      ]
-    },
-    {
-      "id" : "swift-llbuild",
-      "classification" : "library",
-      "externalReferences" : [
-        {
-          "kind" : "vcs",
-          "url" : "https://github.com/apple/swift-llbuild.git"
-        }
-      ]
-    },
-    {
-      "id" : "swift-tools-support-core",
-      "classification" : "library",
-      "externalReferences" : [
-        {
-          "kind" : "vcs",
-          "url" : "https://github.com/apple/swift-tools-support-core.git"
-        }
-      ]
-    },
-    {
-      "id" : "Git",
-      "classification" : "library",
-      "externalReferences" : [
-        {
-          "kind" : "vcs",
-          "url" : "https://github.com/SwiftDocOrg/Git.git"
-        }
-      ]
-    },
-    {
-      "id" : "swift-driver",
-      "classification" : "library",
-      "externalReferences" : [
-        {
-          "kind" : "vcs",
-          "url" : "https://github.com/apple/swift-driver.git"
-        }
-      ]
-    },
-    {
-      "id" : "Yams",
-      "classification" : "library",
-      "externalReferences" : [
-        {
-          "kind" : "vcs",
-          "url" : "https://github.com/jpsim/Yams.git"
-        }
-      ]
-    },
-    {
-      "id" : "swift-argument-parser",
-      "classification" : "library",
-      "externalReferences" : [
-        {
-          "kind" : "vcs",
-          "url" : "https://github.com/apple/swift-argument-parser.git"
-        }
-      ]
-    }
-  ]
+    ]
 }
+```
