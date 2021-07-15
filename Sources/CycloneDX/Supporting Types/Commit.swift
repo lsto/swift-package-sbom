@@ -25,7 +25,7 @@ public struct Commit: Hashable, Identifiable {
 
 extension Commit: Encodable {
     private enum CodingKeys: String, CodingKey {
-        case id
+        case id = "uid"
         case url
         case author
         case committer
