@@ -22,9 +22,9 @@ extension CycloneDX.Hash {
         let sha512Digest = [UInt8](sha512Hash.finalize())
 
         return [
-            Hash(algorithm: "sha256", value: sha256Digest.hexadecimal),
-            Hash(algorithm: "sha384", value: sha384Digest.hexadecimal),
-            Hash(algorithm: "sha512", value: sha512Digest.hexadecimal)
+            Hash(algorithm: .sha256, value: sha256Digest.hexadecimal),
+            Hash(algorithm: .sha384, value: sha384Digest.hexadecimal),
+            Hash(algorithm: .sha512, value: sha512Digest.hexadecimal)
         ]
     }
 }
