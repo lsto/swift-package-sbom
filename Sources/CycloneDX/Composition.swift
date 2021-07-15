@@ -1,4 +1,4 @@
-public struct Composition: Hashable, Encodable {
+public struct Composition: Hashable {
     public enum Aggregate: String, Hashable, Encodable {
         case complete
         case incomplete
@@ -20,5 +20,22 @@ public struct Composition: Hashable, Encodable {
         self.aggregates = aggregates
         self.assemblies = assemblies
         self.dependencies = dependencies
+    }
+}
+
+// MARK: - Encodable
+
+extension Composition: Encodable {
+    private enum CodingKeys: String, CodingKey {
+        case aggregates
+        case assemblies
+        case dependencies
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfAny(in: aggregates, forKey: .aggregates)
+        try container.encodeIfAny(in: assemblies, forKey: .assemblies)
+        try container.encodeIfAny(in: dependencies, forKey: .dependencies)
     }
 }
