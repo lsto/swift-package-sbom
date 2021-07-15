@@ -2,9 +2,23 @@
 
 A software bill of materials (SBoM) generator for Swift packages.
 
-Run this command to print to `stdout`
+Run this command to print
 a JSON representation of a [CycloneDX](https://cyclonedx.org/) SBoM
-for a Swift package at the provided path.
+for a Swift package at a given path.
+
+A software component can be described by a bill of materials
+at different levels of detail.
+This project currently includes the following information:
+
+- [x] Component records for each library and executable product,
+      each with a list of source files.
+- [x] SHA256, SHA384, SHA512 checksums for each source file
+- [x] Information about the latest commit 
+      (if the package root contains a `.git` directory)
+- [x] Component records for each resolved dependency,
+      including information about transitive relationships
+
+> ⚠️ This project is under active development and isn't ready for production use.
 
 For more information about software bill of materials,
 see [this webpage](https://www.ntia.gov/sbom)
@@ -42,8 +56,26 @@ OPTIONS:
   "metadata" : {
     "timestamp" : "2021-07-15T21:50:00Z"
   },
-  "components" : [
+  "components": [
     {
+      "id" : "swift-package-sbom",
+      "classification" : "application",
+      "pedigree" : {
+        "commits" : [
+          {
+            "id" : "e5f8119e8aff6d62c631663968b56c774012a441",
+            "author" : {
+              "name" : "Mattt",
+              "email" : "mattt@me.com"
+            },
+            "committer" : {
+              "name" : "Mattt",
+              "email" : "mattt@me.com"
+            },
+            "message" : "Initial commit"
+          }
+        ]
+      },
       "components" : [
         {
           "id" : "Sources/swift-package-sbom/main.swift",
@@ -153,9 +185,11 @@ OPTIONS:
             }
           ]
         }
-      ],
-      "id" : "swift-package-sbom",
-      "classification" : "application",
+      ]
+    },
+    {
+      "id" : "CycloneDX",
+      "classification" : "library",
       "pedigree" : {
         "commits" : [
           {
@@ -171,9 +205,7 @@ OPTIONS:
             "message" : "Initial commit"
           }
         ]
-      }
-    },
-    {
+      },
       "components" : [
         {
           "id" : "Sources/CycloneDX/Extensions/KeyedEncodingContainerProtocol+Extensions.swift",
@@ -571,25 +603,7 @@ OPTIONS:
             }
           ]
         }
-      ],
-      "id" : "CycloneDX",
-      "classification" : "library",
-      "pedigree" : {
-        "commits" : [
-          {
-            "id" : "c41e154875eccf1d99f188b80c1fdbb483359eab",
-            "author" : {
-              "name" : "Mattt",
-              "email" : "mattt@me.com"
-            },
-            "committer" : {
-              "name" : "Mattt",
-              "email" : "mattt@me.com"
-            },
-            "message" : "Initial commit"
-          }
-        ]
-      }
+      ]
     },
     {
       "id" : "swift-package-manager",
