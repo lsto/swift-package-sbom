@@ -101,7 +101,7 @@ public struct Component: Identifiable, Hashable {
 
 extension Component: Encodable {
     private enum CodingKeys: String, CodingKey {
-        case id
+        case id = "bom-ref"
         case classification
         case mimeType = "mime-type"
         case supplier
